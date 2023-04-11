@@ -6,7 +6,7 @@ on: [push]
 env:
   AZURE_WEBAPP_NAME: react-az-site   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './react-az-site'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '14.x'                # set this to the node version to use
+  NODE_VERSION: '16.x'                # set this to the node version to use
 
 jobs:
   build-and-deploy:
@@ -25,7 +25,7 @@ jobs:
         npm install
         npm run build --if-present
         npm run test --if-present
-      working-directory: my-app-path
+      working-directory: react-az-site
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with: 
