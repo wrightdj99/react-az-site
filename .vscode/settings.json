@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d8097a15-8956-4319-8149-71ce571496f1/resourceGroups/wrightdj99reactaz_group/providers/Microsoft.Web/sites/wrightdj99reactaz",
+    "appService.deploySubpath": "."
+}
